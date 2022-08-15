@@ -1,0 +1,196 @@
+/* APLICAMOS RESET*/
+
+*{
+       font-family:'Roboto' ;
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+}
+
+
+/* HOME */
+
+header{
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+}
+
+
+main{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows:auto ;
+      grid-template-areas: 
+      ¨subtitulo subtitulo¨
+      ¨column column1¨;
+}
+
+
+.fondo{ 
+       background-color: white;
+       display: grid;
+}
+
+
+.bannerImage{     
+       width: 100%;
+       height: 150px;
+}
+
+
+.banner{
+      line-height: 0;
+}
+
+
+.title{
+      position: relative;
+      top: 100px;
+      left: 30px;
+}
+
+
+.menu{
+     text-align: center;
+}
+    
+
+.menu ul{
+      display: flex; 
+      column-gap: 10px;
+      list-style: none;
+      border-radius: 25px;
+
+}
+
+
+.menu ul li{
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: rgb(13, 117, 120);
+      padding: 5px;
+      border-radius: 40%;
+      font-size: 1.5rem;
+}
+
+
+nav ul li:hover{
+      list-style: none;
+      background-color: rgb(13, 117, 120);
+      padding: 5px;
+      border-radius: 40%;
+      transform: scale(1.2);
+      box-shadow: 1px 1px 10px rgb(8, 8, 8);
+
+}
+
+
+.menu ul li a {
+      font-size: 1.2rem;
+      margin-right: 10px;
+      text-decoration: none;
+      color:whitesmoke;
+}
+
+
+hr{
+	border: 0;
+      border-top: 1px solid #010000;
+      margin: 5px 120px 0px 120px;
+}
+
+
+.subtitulo{
+      margin-top: 50px;
+      text-align: center;
+      font-size: 32px;
+}
+
+
+.descripcion{
+      text-align: justify;
+}
+
+
+.column{
+      width: 60%;
+      margin: 7% 20% 0% 20%;     
+}
+
+.column1{
+      width: 50%;
+      margin: 6% 50% 3% 0%;
+      color: aliceblue;
+      font-weight: bold;
+}
+
+
+.row{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(13, 117, 120);
+}
+
+
+.nuestrosTrabajos{
+      margin-top: 100px;
+      text-align: center;
+      
+}
+
+
+.pieDePagina{
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-image: linear-gradient(to top, rgb(3, 53, 82), white);
+   
+      color:whitesmoke
+}
+
+
+/* SERVICIOS */
+.servicioImagen{
+      width: 500px;
+      height: 400px;
+}
+
+/*TRABAJOS*/
+table{
+      text-align: center;
+      margin: 50px;
+      
+}
+
+.padre{
+      display: grid;
+    
+     grid-template-columns:100 px 200 px ;
+     grid-template-rows: 100px;
+
+}
+
+.faq{
+      grid-area: faq;
+      text-align: left;
+}
+
+.ref{
+      grid-area: ref;
+      align-self:flex-end ;
+}
+
+
+
+/* Mediaqueries */
+@media screen and (min-width:600px){
+      main{
+       grid-template-areas: 
+      ¨subtitulo subtitulo¨
+      ¨column column1¨;
+}
+}
